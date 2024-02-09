@@ -1,0 +1,220 @@
+body{
+    background-color: var(--text-bg-color);
+}
+
+main{
+   display: flex;
+   justify-content: center;
+   align-items: center; 
+}
+
+.information{
+    margin: 35px 50px 0px 0px;
+  
+}
+
+.information .title{
+    color: #fff;
+    font-family: var(--font-all-text);
+    font-size: 20px;
+}
+
+.information .title span{
+    color: var(--hover-btn-color);
+}
+
+.contacts .links-contacts{
+  margin: 50px 0;
+}
+
+.contacts .links-contacts li{
+    padding: 20px 0px;
+}
+
+ .contacts .links-contacts a{
+    color: #fff;
+    font-family: var(--font-all-text);
+    padding: 10px; 
+}
+  
+.contacts .links-contacts li img {
+    width: 15px;
+    margin-right: 8px;
+}
+
+.contacts .links-contacts a:hover{
+    background-color: #570A57;
+    transition: 0.4s;  
+    border-radius: 10px;
+}
+
+.footer .social-media{
+    display: flex;
+    flex-direction: row;
+    margin-top: 150px;
+}
+
+.footer .social-media li{
+    display: inline-block;
+    padding: 0px  20px; 
+    position: relative;
+}
+
+.footer .social-media li:hover img {
+    transform: scale(1.2); 
+}
+
+.footer .social-media li::before{
+    content: '';
+    position: absolute;
+    top: 50%;
+    left:50% ;
+    transform: translate(-50%, -50%);
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background-color: #A91079;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+    z-index: -1;
+}
+
+.footer .social-media li:hover::before{
+    opacity: 1;
+}
+
+.footer .social-media img{
+    height: 15px;
+    transition: transform 0.3s ease;
+}
+
+form{
+    background-color: #fff;
+    height: 550px;
+    width: 450px;
+    border-radius: 15px;
+    padding: 20px;
+    margin-left: 60px;
+    margin-top: 35px;
+}
+
+form .click p{
+    color: var(--text-bg-color);
+    font-family: var(--font-all-text);
+    font-size: 14px;
+    font-weight: 600;
+    margin-bottom: 8px;
+    padding: 10px;
+}
+
+form .click .professional-choice{
+display: flex;
+flex-wrap: wrap;
+}
+
+form .click .professional-choice li{
+    padding: 10px;
+}
+
+form .click .professional-choice a{
+    color: #a7a7a7;
+    font-size: 15px;
+    font-family: var(--font-all-text);
+    white-space: no-reap;
+    border: 1px solid  #bfbfbf;
+    padding: 5px;
+    border-radius: 4px;
+}
+
+form .click .professional-choice a:hover{
+    background-color: #A91079;
+    color: #fff;
+    transition: 0.3s;
+}
+
+form .personal-data{
+    display: flex;
+    flex-direction: column;
+    margin-top: 20px;
+    padding: 8px;
+}
+
+form .personal-data input{
+    padding-bottom: 5px;
+}
+
+form .personal-data .inputs-border{
+    border-bottom: 2px solid #a7a7a7;
+}
+
+form .personal-data input:focus{
+    box-shadow: 0 0 0 0 ;
+    outline: 0;
+}
+
+form .personal-data .placeholder-color::placeholder{
+    color: #a7a7a7;
+    font-family: var(--font-all-text);
+    font-weight: 700;
+}
+
+form  .personal-data .span{
+    visibility: hidden;
+    font-size: 10px;
+    margin-bottom:35px;
+}
+
+form .btn-send button{
+    background-color: #A91079;
+    color: #fff;
+    font-family: var(--font-all-text);
+    width: 200px;
+    height: 40px;
+    padding: 25px;
+    margin-top: 60px;
+    border-radius: 10px;
+    text-align: center;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+form .btn-send button:hover{
+    box-shadow: 0px 0px 40px 3px var(  --hover-btn-color);
+    transition: 0.4s;
+    -moz-box-shadow: 0px 0px 40px 3px var(  --hover-btn-color);
+    -webkit-box-shadow:0px 0px 40px 3px var(  --hover-btn-color); 
+}
+
+.btn-send img{
+   width: 20px;
+   margin-right: 10px;
+}
+
+
+
+form .personal-data .border-new{
+    border-bottom: 2px solid var(--hover-btn-color);
+}
+
+form .personal-data .placeholder-new-color::placeholder{
+    color: var(--text-bg-color);font-family: var(--font-all-text);
+    font-weight: 700;
+}
+
+form .personal-data .border-error{
+    border-bottom: 2px solid red;
+}
+
+
+form  .personal-data .span.visivel{
+    color: red;
+    visibility: visible;
+    font-family: var(--font-all-text);
+}
+
+form .personal-data .border-filled{
+    border-bottom: 2px solid green;
+}
+
